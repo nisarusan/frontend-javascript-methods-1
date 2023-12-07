@@ -13,6 +13,8 @@ console.log(word.length);
 const fruit = "Banaan";
 const vegetable = "Aardappel";
 
+console.log(fruit.length > vegetable.length);
+
 
 
 /* Opdracht 2 */
@@ -21,6 +23,8 @@ const vegetable = "Aardappel";
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
 
+console.log(fruit.charAt(fruit.length - 1));
+console.log(vegetable.charAt(vegetable.length - 1));
 
 
 /* Opdracht 3 */
@@ -29,6 +33,8 @@ const vegetable = "Aardappel";
 
 const userInput = "  De kat krabt de krullen van de trap ";
 
+console.log(userInput.trim());
+
 
 
 /* Opdracht 4 */
@@ -36,13 +42,14 @@ const userInput = "  De kat krabt de krullen van de trap ";
 // ---- Verwachte uitkomst: true
 
 const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?"
+console.log(story.includes("Fantastisch"));
 
 
 
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
-
+console.log(story.substring(0, story.indexOf("Fantastisch")));
 
 
 /* Opdracht 6 */
@@ -53,6 +60,7 @@ const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch,
 // ---- Verwachte uitkomst: "€35,59"
 
 const price = "$35.59";
+console.log(price.replace("$", "€"));
 
 
 
